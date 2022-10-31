@@ -6,7 +6,7 @@ const App = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=4LUGYPOU8KPDJQR2";
+    const url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo";
     fetch(url).then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => console.log(error))
